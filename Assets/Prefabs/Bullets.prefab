@@ -128,3 +128,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0404fe454d902412e83c4c33557b4a39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionParticleprefab: {fileID: 5178942614041884840, guid: aa728f12e95974826adb125b4ad56154, type: 3}
