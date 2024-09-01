@@ -25,12 +25,18 @@ public class ScoreManager : MonoBehaviour
         
     }
 
+    /// <summary>
+    /// incrementing the score
+    /// </summary>
     public void IncrementScore()
     {
         score += 1;  // Increment the score by 1
         UpdateScoreText();  // Update the score display
     }
 
+    /// <summary>
+    /// Update the score display every time whenever score gets incremented
+    /// </summary>
     void UpdateScoreText()
     {
         scoreText.text = score.ToString();
