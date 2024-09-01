@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SpaceshipController : MonoBehaviour
 {
@@ -87,7 +89,8 @@ public class SpaceshipController : MonoBehaviour
     {
         if(other.gameObject.tag == "Enemy")
         {
-            Time.timeScale = 0;
+            // Whenever the Enemy collide with the spaceship then we start the loading scene.
+            SceneManager.LoadScene("LoadingScene");
         }
     }
 }
