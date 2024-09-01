@@ -27,7 +27,7 @@ public class ScoreManager : MonoBehaviour
 
     public void IncrementScore()
     {
-        score += 1;  // Increment the score by 1 (or any value you want)
+        score += 1;  // Increment the score by 1
         UpdateScoreText();  // Update the score display
     }
 
