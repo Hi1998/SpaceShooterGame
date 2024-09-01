@@ -352,8 +352,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpawn: {fileID: 1247096858818534143, guid: 818b4e273084e40ada7ea3f9b6ed7d70, type: 3}
   SpawnPosition1: {fileID: 520583604}
-  EnemySpeed: 4
-  spawnInterval: 1
+  EnemySpeed: 1
+  spawnInterval: 3
 --- !u!4 &520583604
 Transform:
   m_ObjectHideFlags: 0
@@ -533,7 +533,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpawn: {fileID: 1247096858818534143, guid: 818b4e273084e40ada7ea3f9b6ed7d70, type: 3}
   SpawnPosition1: {fileID: 856951953}
-  EnemySpeed: 4
+  EnemySpeed: 1
   spawnInterval: 5
 --- !u!4 &856951953
 Transform:
@@ -581,7 +581,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpawn: {fileID: 1247096858818534143, guid: 818b4e273084e40ada7ea3f9b6ed7d70, type: 3}
   SpawnPosition1: {fileID: 896596002}
-  EnemySpeed: 4
+  EnemySpeed: 1
   spawnInterval: 9
 --- !u!4 &896596002
 Transform:
@@ -629,8 +629,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpawn: {fileID: 1247096858818534143, guid: 818b4e273084e40ada7ea3f9b6ed7d70, type: 3}
   SpawnPosition1: {fileID: 1072431399}
-  EnemySpeed: 4
-  spawnInterval: 3
+  EnemySpeed: 1
+  spawnInterval: 4
 --- !u!4 &1072431399
 Transform:
   m_ObjectHideFlags: 0
@@ -677,7 +677,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpawn: {fileID: 1247096858818534143, guid: 818b4e273084e40ada7ea3f9b6ed7d70, type: 3}
   SpawnPosition1: {fileID: 1187600297}
-  EnemySpeed: 4
+  EnemySpeed: 1
   spawnInterval: 11
 --- !u!4 &1187600297
 Transform:
@@ -725,7 +725,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpawn: {fileID: 1247096858818534143, guid: 818b4e273084e40ada7ea3f9b6ed7d70, type: 3}
   SpawnPosition1: {fileID: 1920076417}
-  EnemySpeed: 4
+  EnemySpeed: 1
   spawnInterval: 7
 --- !u!4 &1920076417
 Transform:
