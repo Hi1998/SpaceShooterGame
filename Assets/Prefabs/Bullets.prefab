@@ -129,3 +129,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collisionParticleprefab: {fileID: 3984646315381286097, guid: cc3a97e347b0e41b28a47b15b37bf7ce, type: 3}
+  scoreText: {fileID: 6821693770397818877, guid: 5a9d5060d60b747ed8c91be14caf08b8, type: 3}

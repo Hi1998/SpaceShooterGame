@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class BulletCollisionDetector : MonoBehaviour
 {
@@ -9,6 +10,16 @@ public class BulletCollisionDetector : MonoBehaviour
     /// </summary>
     [SerializeField]
     private GameObject collisionParticleprefab;
+
+    /// <summary>
+    /// Reference to ScoreManager
+    /// </summary>
+    private ScoreManager scoreManager;
+
+    void Start()
+    {
+        scoreManager = GameObject.FindGameObjectWithTag("ScoreControl").GetComponent<ScoreManager>();
+    }
 
     void Update()
     {
@@ -28,6 +39,8 @@ public class BulletCollisionDetector : MonoBehaviour
             {
                 particleSystem.Play(); // Explicitly start the particle system
             }
+            // Increment Score 
+            scoreManager.IncrementScore();
             Destroy(particleSystemInstance, particleSystem.main.duration);
             Destroy(collision.gameObject);
         }
