@@ -87,7 +87,7 @@ public class SpaceshipController : MonoBehaviour
 
     void OnCollisionEnter(Collision other)
     {
-        if(other.gameObject.tag == "Enemy")
+        if(other.gameObject.tag == "Enemy" || other.gameObject.tag == "EnemyBullet")
         {
             // Whenever the Enemy collide with the spaceship then we start the loading scene.
             SceneManager.LoadScene("LoadingScene");

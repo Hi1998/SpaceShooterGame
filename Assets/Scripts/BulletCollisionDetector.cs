@@ -26,7 +26,7 @@ public class BulletCollisionDetector : MonoBehaviour
     }
     void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "Enemy")
+        if(collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "EnemyBullet")
         {
             // Get the contact point of the collision
             Vector2 collisionPoint = collision.contacts[0].point;
@@ -40,7 +40,10 @@ public class BulletCollisionDetector : MonoBehaviour
                 particleSystem.Play(); // Explicitly start the particle system
             }
             // Increment Score 
-            scoreManager.IncrementScore();
+            if(collision.gameObject.tag == "Enemy")
+            {
+                scoreManager.IncrementScore();
+            }
             Destroy(particleSystemInstance, particleSystem.main.duration);
             Destroy(collision.gameObject);
         }

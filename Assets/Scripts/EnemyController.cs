@@ -23,7 +23,7 @@ public class EnemyController : MonoBehaviour
     /// <summary>
     /// Timing when was Enemy Spawned.
     /// </summary>
-    private float timeSinceLastSpawn; 
+    private float timeSinceLastSpawn;
 
     // Start is called before the first frame update
     void Start()
