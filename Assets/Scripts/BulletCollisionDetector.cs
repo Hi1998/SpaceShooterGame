@@ -39,7 +39,7 @@ public class BulletCollisionDetector : MonoBehaviour
             {
                 particleSystem.Play(); // Explicitly start the particle system
             }
-            // Increment Score 
+            // Increment Score
             if(collision.gameObject.tag == "Enemy")
             {
                 scoreManager.IncrementScore();

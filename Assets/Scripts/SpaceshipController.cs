@@ -35,10 +35,13 @@ public class SpaceshipController : MonoBehaviour
     /// Movement of the Spaceship in X axis and Y axis
     /// </summary>
     float inputX, inputY;
+
+    public Health SpaceshipHealth;
     // Start is called before the first frame update
     void Start()
     {
         rigidbody = GetComponent<Rigidbody>();
+        SpaceshipHealth = GetComponent<Health>();
     }
 
     // Update is called once per frame
@@ -87,7 +90,17 @@ public class SpaceshipController : MonoBehaviour
 
     void OnCollisionEnter(Collision other)
     {
-        if(other.gameObject.tag == "Enemy" || other.gameObject.tag == "EnemyBullet")
+        if(other.gameObject.tag == "EnemyBullet")
+        {
+            SpaceshipHealth.DamageSpaceShip(10);
+            Destroy(other.gameObject);
+            if(SpaceshipHealth.currentHealth <= 0)
+            {
+                Destroy(gameObject);
+                SceneManager.LoadScene("LoadingScene");
+            }
+        }
+        if(other.gameObject.tag == "Enemy")
         {
             // Whenever the Enemy collide with the spaceship then we start the loading scene.
             SceneManager.LoadScene("LoadingScene");
